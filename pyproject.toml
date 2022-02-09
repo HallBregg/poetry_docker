@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "this"
+version = "0.1.0"
+description = ""
+authors = ["Hall Bregg <hallbregg0@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+celery = {extras = ["redis"], version = "^5.2.3"}
+flower = "^1.0.0"
+setuptools = "59.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+mypy = "^0.931"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master"]
+build-backend = "poetry.core.masonry.api"
